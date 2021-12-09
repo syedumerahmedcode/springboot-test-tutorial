@@ -6,6 +6,7 @@ TODO:
 - Define Junit Platform
 - Define Junit Jupiter
 - Define Junit Vintage
+- Add a small note on Assertions package
 
 References:
 
