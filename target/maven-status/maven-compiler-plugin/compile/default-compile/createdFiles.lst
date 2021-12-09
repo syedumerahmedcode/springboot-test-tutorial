@@ -1,2 +1,3 @@
 com/umer/springboottesttutorial/SpringbootTestTutorialApplication.class
 com/umer/springboottesttutorial/student/entity/Student.class
+com/umer/springboottesttutorial/student/entity/Gender.class
