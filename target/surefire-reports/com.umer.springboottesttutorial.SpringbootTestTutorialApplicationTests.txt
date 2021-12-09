@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.umer.springboottesttutorial.SpringbootTestTutorialApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.573 s - in com.umer.springboottesttutorial.SpringbootTestTutorialApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.06 s - in com.umer.springboottesttutorial.SpringbootTestTutorialApplicationTests
