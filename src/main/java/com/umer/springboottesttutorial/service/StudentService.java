@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.umer.springboottesttutorial.entity.Student;
+import com.umer.springboottesttutorial.exception.BadRequestException;
 import com.umer.springboottesttutorial.repository.StudentRepository;
 
 import lombok.AllArgsConstructor;
@@ -20,6 +21,11 @@ public class StudentService {
 	}
 	
 	public void addStudent(Student student) {
-		Boolean emailExists= studentRepository.selectExistsEmail(student.getEmail());
+		final String email = student.getEmail();
+		Boolean emailExists= studentRepository.selectExistsEmail(email);
+		if(emailExists) {
+			throw new BadRequestException("Email " + email + " taken");
+		}
+		studentRepository.save(student);
 	}
 }
