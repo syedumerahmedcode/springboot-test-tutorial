@@ -1,4 +1,5 @@
 com/umer/springboottesttutorial/SpringbootTestTutorialApplication.class
+com/umer/springboottesttutorial/service/StudentService.class
 com/umer/springboottesttutorial/entity/Student.class
 com/umer/springboottesttutorial/entity/Gender.class
 com/umer/springboottesttutorial/repository/StudentRepository.class
