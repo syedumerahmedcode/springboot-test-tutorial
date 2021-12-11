@@ -18,4 +18,8 @@ public class StudentService {
 	public List<Student> getAllStudents(){
 		return studentRepository.findAll();
 	}
+	
+	public void addStudent(Student student) {
+		Boolean emailExists= studentRepository.selectExistsEmail(student.getEmail());
+	}
 }
