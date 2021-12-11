@@ -1,5 +1,7 @@
 /home/umer/spring/springboot-test-tutorial/src/main/java/com/umer/springboottesttutorial/entity/Gender.java
 /home/umer/spring/springboot-test-tutorial/src/main/java/com/umer/springboottesttutorial/SpringbootTestTutorialApplication.java
 /home/umer/spring/springboot-test-tutorial/src/main/java/com/umer/springboottesttutorial/repository/StudentRepository.java
+/home/umer/spring/springboot-test-tutorial/src/main/java/com/umer/springboottesttutorial/exception/StudentNotFoundException.java
+/home/umer/spring/springboot-test-tutorial/src/main/java/com/umer/springboottesttutorial/exception/BadRequestException.java
 /home/umer/spring/springboot-test-tutorial/src/main/java/com/umer/springboottesttutorial/entity/Student.java
 /home/umer/spring/springboot-test-tutorial/src/main/java/com/umer/springboottesttutorial/service/StudentService.java
