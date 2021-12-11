@@ -1,3 +1,4 @@
 /home/umer/spring/springboot-test-tutorial/src/main/java/com/umer/springboottesttutorial/SpringbootTestTutorialApplication.java
 /home/umer/spring/springboot-test-tutorial/src/main/java/com/umer/springboottesttutorial/student/entity/Gender.java
+/home/umer/spring/springboot-test-tutorial/src/main/java/com/umer/springboottesttutorial/student/repository/StudentRepository.java
 /home/umer/spring/springboot-test-tutorial/src/main/java/com/umer/springboottesttutorial/student/entity/Student.java
