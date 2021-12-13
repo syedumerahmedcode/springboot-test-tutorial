@@ -3,5 +3,6 @@ com/umer/springboottesttutorial/service/StudentService.class
 com/umer/springboottesttutorial/exception/StudentNotFoundException.class
 com/umer/springboottesttutorial/entity/Gender.class
 com/umer/springboottesttutorial/repository/StudentRepository.class
+com/umer/springboottesttutorial/controller/StudentController.class
 com/umer/springboottesttutorial/exception/BadRequestException.class
 com/umer/springboottesttutorial/entity/Student.class
