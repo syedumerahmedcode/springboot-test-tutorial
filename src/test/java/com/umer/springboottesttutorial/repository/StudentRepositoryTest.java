@@ -9,23 +9,22 @@ import com.umer.springboottesttutorial.entity.Gender;
 import com.umer.springboottesttutorial.entity.Student;
 
 public class StudentRepositoryTest {
-	
+
 	@Autowired
 	private StudentRepository underTest;
-	
+
 	@Test
 	void itShouldCheckIfStudentExistsByEmail() {
 		// given
-		String email="some.email@gmail.com";
-		Student student=new Student("Alice", email, Gender.FEMALE);
-		
+		String email = "some.email@gmail.com";
+		Student student = new Student("Alice", email, Gender.FEMALE);
+
 		// when
-		boolean expected= underTest.selectExistsEmail(email);		
-		
-		
+		boolean expected = underTest.selectExistsEmail(email);
+
 		// then
 		assertThat(expected).isTrue();
-		
+
 	}
 
 }
