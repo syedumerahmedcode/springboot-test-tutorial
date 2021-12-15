@@ -16,7 +16,7 @@ public class StudentRepositoryTest {
 	private StudentRepository underTest;
 
 	@Test
-	void itShouldCheckIfStudentExistsByEmail() {
+	void whenStudentEmailExistsInDatabase_ThenExistEmailReturnsTrue() {
 		// given
 		String email = "some.email@gmail.com";
 		Student student = new Student("Alice", email, Gender.FEMALE);
@@ -27,7 +27,18 @@ public class StudentRepositoryTest {
 
 		// then
 		assertThat(expected).isTrue();
+	}
+	
+	@Test
+	void whenStudentEmailDoesNotExistsInDatabase_ThenExistEmailReturnsFalse() {
+		// given
+		String email = "some.email@gmail.com";
 
+		// when
+		boolean expected = underTest.selectExistsEmail(email);
+
+		// then
+		assertThat(expected).isFalse();
 	}
 
 }
