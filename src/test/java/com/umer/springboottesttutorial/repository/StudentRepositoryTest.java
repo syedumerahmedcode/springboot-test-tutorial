@@ -3,6 +3,9 @@ package com.umer.springboottesttutorial.repository;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.NullAndEmptySource;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
@@ -33,6 +36,18 @@ public class StudentRepositoryTest {
 	void whenStudentEmailDoesNotExistsInDatabase_ThenExistEmailReturnsFalse() {
 		// given
 		String email = "some.email@gmail.com";
+
+		// when
+		boolean expected = underTest.selectExistsEmail(email);
+
+		// then
+		assertThat(expected).isFalse();
+	}
+	
+	@ParameterizedTest
+	@NullAndEmptySource
+	void whenStudentEmailIsNotPassed_ThenExistEmailReturnsFalse(String email) {
+	
 
 		// when
 		boolean expected = underTest.selectExistsEmail(email);
