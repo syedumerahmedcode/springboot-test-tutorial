@@ -11,6 +11,9 @@ TODO:
 
 @DataJpaTest glues the H2 database (defined in application.properties of test package) with the StudentRepositoryTest class. Due to this association, we can test the repository interface.
 
+- Add a note on parametrized tests.
+
+
 References:
 
 - https://junit.org/junit5/
