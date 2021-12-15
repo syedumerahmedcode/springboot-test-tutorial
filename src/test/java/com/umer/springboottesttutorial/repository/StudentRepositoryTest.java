@@ -2,6 +2,8 @@ package com.umer.springboottesttutorial.repository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
@@ -18,6 +20,23 @@ public class StudentRepositoryTest {
 	@Autowired
 	private StudentRepository underTest;
 
+	@BeforeEach
+	void setUp() {
+		// Not used in this test class
+	}
+
+	@AfterEach
+	void tearDown() {
+		/**
+		 * I wonder if this is really necessary as the database is an in-memory database
+		 * which is initialized before every test run and dropped after every test run
+		 * due to the following property in application.properties.
+		 * 
+		 * spring.jpa.hibernate.ddl-auto=create-drop
+		 */
+		underTest.deleteAll();
+	}
+
 	@Test
 	void whenStudentEmailExistsInDatabase_ThenExistEmailReturnsTrue() {
 		// given
@@ -31,7 +50,7 @@ public class StudentRepositoryTest {
 		// then
 		assertThat(expected).isTrue();
 	}
-	
+
 	@Test
 	void whenStudentEmailDoesNotExistsInDatabase_ThenExistEmailReturnsFalse() {
 		// given
@@ -43,11 +62,10 @@ public class StudentRepositoryTest {
 		// then
 		assertThat(expected).isFalse();
 	}
-	
+
 	@ParameterizedTest
 	@NullAndEmptySource
 	void whenStudentEmailIsNotPassed_ThenExistEmailReturnsFalse(String email) {
-	
 
 		// when
 		boolean expected = underTest.selectExistsEmail(email);
