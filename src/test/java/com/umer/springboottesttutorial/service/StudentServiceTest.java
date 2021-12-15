@@ -1,5 +1,7 @@
 package com.umer.springboottesttutorial.service;
 
+import static org.mockito.Mockito.verify;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -13,7 +15,6 @@ public class StudentServiceTest {
 
 	@Mock
 	private StudentRepository studentRepository;
-
 	private AutoCloseable autoCloseable;
 	private StudentService underTest;
 
@@ -33,7 +34,14 @@ public class StudentServiceTest {
 	}
 
 	@Test
-	void getAllStudents() {
+	void whenGetAllStudentsIsCalled_ThenVerifyThatFindAllForRepositoryIsUsed() {
+		// when
+		underTest.getAllStudents();
+		// then
+		/**
+		 * check that findAll method on the mock bean is called
+		 */
+		verify(studentRepository).findAll();
 
 	}
 
