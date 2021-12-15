@@ -6,16 +6,19 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.umer.springboottesttutorial.repository.StudentRepository;
 
+@ExtendWith(MockitoExtension.class)
 public class StudentServiceTest {
 
 	@Mock
 	private StudentRepository studentRepository;
-	private AutoCloseable autoCloseable;
+//	private AutoCloseable autoCloseable;
 	private StudentService underTest;
 
 	@BeforeEach
@@ -24,13 +27,13 @@ public class StudentServiceTest {
 		 * If we have more than one mock, it will initialize all the mocks in this test
 		 * class.
 		 */
-		autoCloseable = MockitoAnnotations.openMocks(this);
+//		autoCloseable = MockitoAnnotations.openMocks(this);
 		underTest = new StudentService(studentRepository);
 	}
 
 	@AfterEach
 	void tearDown() throws Exception {
-		autoCloseable.close();
+//		autoCloseable.close();
 	}
 
 	@Test
