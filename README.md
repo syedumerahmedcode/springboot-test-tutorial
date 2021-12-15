@@ -7,6 +7,7 @@ TODO:
 - Define Junit Jupiter
 - Define Junit Vintage
 - Add a small note on AssertJ
+- Write a small note on @DataJpaTest in your own words.
 
 References:
 
