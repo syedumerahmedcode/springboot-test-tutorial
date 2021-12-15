@@ -17,6 +17,7 @@ TODO:
 Why do we use Mock? Because we have already tested StudentRepository class. Hence. we know for a fact that the Repository works. Now, when testing Service class, we do not need to populate the repository with test data again(as we have already done it before). So, we use Mocking. 
 
 - In order to avoid initialization and closing of `autoClosable`, one can also use `@ExtendWith(MockitoExtension.class)`.
+- Write a small note on ArgumentCaptor. Describe how ArgumentCaptor is used to verify inputs.
 
 
 References:

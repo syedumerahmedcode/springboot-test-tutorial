@@ -1,5 +1,6 @@
 package com.umer.springboottesttutorial.service;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.verify;
 
 import org.junit.jupiter.api.AfterEach;
@@ -7,10 +8,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import com.umer.springboottesttutorial.entity.Gender;
+import com.umer.springboottesttutorial.entity.Student;
 import com.umer.springboottesttutorial.repository.StudentRepository;
 
 @ExtendWith(MockitoExtension.class)
@@ -49,9 +53,23 @@ public class StudentServiceTest {
 	}
 
 	@Test
-	@Disabled
-	void addStudent() {
+	void whenAddStudent_ThenPass() {
+		// given
+		String email = "some.email@gmail.com";
+		Student student = new Student("Alice", email, Gender.FEMALE);
 
+		// when
+		underTest.addStudent(student);
+
+		// then
+		// TODO: Add comments for better explanation.
+		ArgumentCaptor<Student> studentArgumentCaptor = 
+				ArgumentCaptor.forClass(Student.class);
+		verify(studentRepository)
+				.save(studentArgumentCaptor.capture());
+		
+		final Student capturedStudent = studentArgumentCaptor.getValue();
+		assertThat(capturedStudent).isEqualTo(student);
 	}
 
 	@Test
