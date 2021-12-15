@@ -9,6 +9,8 @@ TODO:
 - Add a small note on AssertJ
 - Write a small note on @DataJpaTest in your own words.
 
+@DataJpaTest glues the H2 database (defined in application.properties of test package) with the StudentRepositoryTest class. Due to this association, we can test the repository interface.
+
 References:
 
 - https://junit.org/junit5/
