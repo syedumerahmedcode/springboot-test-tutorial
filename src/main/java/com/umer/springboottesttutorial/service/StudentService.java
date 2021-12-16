@@ -1,11 +1,15 @@
 package com.umer.springboottesttutorial.service;
 
+import java.util.ArrayList;
 import java.util.List;
+
 import org.springframework.stereotype.Service;
+
 import com.umer.springboottesttutorial.entity.Student;
 import com.umer.springboottesttutorial.exception.BadRequestException;
 import com.umer.springboottesttutorial.exception.StudentNotFoundException;
 import com.umer.springboottesttutorial.repository.StudentRepository;
+
 import lombok.AllArgsConstructor;
 
 @Service
@@ -15,8 +19,11 @@ public class StudentService {
 	private final StudentRepository studentRepository;
 
 	public List<Student> getAllStudents() {
-		return studentRepository.findAll();
+		List<Student> students = new ArrayList<>();
+		studentRepository.findAll().forEach(students::add);
+		return students;
 	}
+
 
 	public Student addStudent(Student student) {
 		final String email = student.getEmail();

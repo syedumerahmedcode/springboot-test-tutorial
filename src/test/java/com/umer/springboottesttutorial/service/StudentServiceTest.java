@@ -92,16 +92,6 @@ public class StudentServiceTest {
 	@Disabled
 	void whenDeletingAnExistingStudent_ThenPass() {
 		// given
-		String email = "some.email@gmail.com";
-		Student student = new Student("Alice", email, Gender.FEMALE);
-		Student addedStudent= underTest.addStudent(student);
-
-		// when
-		underTest.deleteStudent(addedStudent.getId());
-		
-		// then
-		ArgumentCaptor<Student> studenArgumentCaptor = ArgumentCaptor.forClass(Student.class);
-		verify(studentRepository).deleteById(studenArgumentCaptor.capture().getId());
 
 	}
 }

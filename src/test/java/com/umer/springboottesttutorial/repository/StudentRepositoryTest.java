@@ -50,6 +50,22 @@ public class StudentRepositoryTest {
 		// then
 		assertThat(expected).isTrue();
 	}
+	
+	@Test
+	void whenStudentIsSavedInDatabaseAndFindStudentByEmail_ThenStudentIsReturned() {
+		// given
+		String email = "some.email@gmail.com";
+		Student student = new Student("Alice", email, Gender.FEMALE);
+		underTest.save(student);
+
+		// when
+		boolean StudentExists = underTest.selectExistsEmail(email);
+		Student studentFound=underTest.findByEmail(email);
+
+		// then
+		assertThat(StudentExists).isTrue();
+		assertThat(studentFound).isEqualTo(student);
+	}
 
 	@Test
 	void whenStudentEmailDoesNotExistsInDatabase_ThenExistEmailReturnsFalse() {
