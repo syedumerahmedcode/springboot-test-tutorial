@@ -89,9 +89,16 @@ public class StudentServiceTest {
 	}
 
 	@Test
-	@Disabled
 	void whenDeletingAnExistingStudent_ThenPass() {
 		// given
+		long studentId=10;
+		given(studentRepository.existsById(studentId)).willReturn(true);
+		
+		// when
+		underTest.deleteStudent(studentId);
+		
+		// then
+		verify(studentRepository).deleteById(studentId);
 
 	}
 }
