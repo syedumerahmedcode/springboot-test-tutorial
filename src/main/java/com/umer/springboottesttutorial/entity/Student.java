@@ -20,7 +20,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-
 @ToString
 @Getter
 @Setter
@@ -30,38 +29,30 @@ import lombok.ToString;
 @Entity
 @Table
 public class Student {
-	
-	
+
+	private static final String STUDENT_SEQUENCE = "student_sequence";
+
 	@Id
-	@SequenceGenerator(
-			name="student_sequence",
-			sequenceName = "student_sequence",
-			allocationSize = 1
-	)
-	@GeneratedValue(
-			generator = "student_sequence",
-			strategy = GenerationType.SEQUENCE
-	)
+	@SequenceGenerator(name = STUDENT_SEQUENCE, sequenceName = STUDENT_SEQUENCE, allocationSize = 1)
+	@GeneratedValue(generator = STUDENT_SEQUENCE, strategy = GenerationType.SEQUENCE)
 	private Long id;
 
 	@NotBlank
 	@Column(nullable = false)
 	private String name;
-	
+
 	@Email
 	@Column(nullable = false, unique = true)
 	private String email;
-	
+
 	@NotNull
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false)
 	private Gender gender;
-	
-	
 
-    public Student(String name, String email, Gender gender) {
-        this.name = name;
-        this.email = email;
-        this.gender = gender;
-    }
+	public Student(String name, String email, Gender gender) {
+		this.name = name;
+		this.email = email;
+		this.gender = gender;
+	}
 }

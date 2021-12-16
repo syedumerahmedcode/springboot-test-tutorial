@@ -18,13 +18,13 @@ public class StudentService {
 		return studentRepository.findAll();
 	}
 
-	public void addStudent(Student student) {
+	public Student addStudent(Student student) {
 		final String email = student.getEmail();
 		Boolean emailExists = studentRepository.selectExistsEmail(email);
 		if (emailExists) {
 			throw new BadRequestException("Email " + email + " already taken.");
 		}
-		studentRepository.save(student);
+		return studentRepository.save(student);
 	}
 
 	public void deleteStudent(long studentId) {
