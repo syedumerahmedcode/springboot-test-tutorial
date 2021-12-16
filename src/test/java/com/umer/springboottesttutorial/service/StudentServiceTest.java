@@ -19,6 +19,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import com.umer.springboottesttutorial.entity.Gender;
 import com.umer.springboottesttutorial.entity.Student;
 import com.umer.springboottesttutorial.exception.BadRequestException;
+import com.umer.springboottesttutorial.exception.StudentNotFoundException;
 import com.umer.springboottesttutorial.repository.StudentRepository;
 
 @ExtendWith(MockitoExtension.class)
@@ -99,6 +100,21 @@ public class StudentServiceTest {
 		
 		// then
 		verify(studentRepository).deleteById(studentId);
-
 	}
+	
+	@Test
+	void whenDeletingAStudentWhichIsNotPresent_ThenThrowAnError() {
+		// given
+		long studentId=10;
+		given(studentRepository.existsById(studentId)).willReturn(false);
+	
+		// when 
+		// then
+		assertThatThrownBy(() -> underTest.deleteStudent(studentId)).isInstanceOf(StudentNotFoundException.class)
+						.hasMessageContaining("Student with id " + studentId + " does not exists.");
+		verify(studentRepository, never()).deleteById(ArgumentMatchers.any());
+	}
+	
+	
+	
 }
