@@ -2,3 +2,4 @@ com/umer/springboottesttutorial/SpringbootTestTutorialApplicationTests$Calculato
 com/umer/springboottesttutorial/SpringbootTestTutorialApplicationTests.class
 com/umer/springboottesttutorial/repository/StudentRepositoryTest.class
 com/umer/springboottesttutorial/service/StudentServiceTest.class
+com/umer/springboottesttutorial/controller/StudentControllerTest.class
