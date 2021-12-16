@@ -8,7 +8,6 @@ import static org.mockito.Mockito.verify;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -92,29 +91,27 @@ public class StudentServiceTest {
 	@Test
 	void whenDeletingAnExistingStudent_ThenPass() {
 		// given
-		long studentId=10;
+		long studentId = 10;
 		given(studentRepository.existsById(studentId)).willReturn(true);
-		
+
 		// when
 		underTest.deleteStudent(studentId);
-		
+
 		// then
 		verify(studentRepository).deleteById(studentId);
 	}
-	
+
 	@Test
 	void whenDeletingAStudentWhichIsNotPresent_ThenThrowAnError() {
 		// given
-		long studentId=10;
+		long studentId = 10;
 		given(studentRepository.existsById(studentId)).willReturn(false);
-	
-		// when 
+
+		// when
 		// then
 		assertThatThrownBy(() -> underTest.deleteStudent(studentId)).isInstanceOf(StudentNotFoundException.class)
-						.hasMessageContaining("Student with id " + studentId + " does not exists.");
+				.hasMessageContaining("Student with id " + studentId + " does not exists.");
 		verify(studentRepository, never()).deleteById(ArgumentMatchers.any());
 	}
-	
-	
-	
+
 }
