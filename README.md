@@ -24,5 +24,8 @@ References:
 
 - https://junit.org/junit5/
 - https://www.youtube.com/watch?v=Geq60OVyBPg&t=635s **(YouTube)**
+- https://www.arhohuttunen.com/spring-boot-webmvctest/ (Description of @WebMvcTest)
+- https://www.arhohuttunen.com/spring-boot-datajpatest/ (Testing the Persistence Layer With Spring Boot @DataJpaTest)
+- https://github.com/arhohuttunen/spring-boot-test-examples (A very good resource for quick reference for annotations about testing)
 
 Timestamp: 59:43
