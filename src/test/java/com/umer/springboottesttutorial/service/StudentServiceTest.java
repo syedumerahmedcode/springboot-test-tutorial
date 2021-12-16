@@ -3,17 +3,17 @@ package com.umer.springboottesttutorial.service;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
+import org.mockito.ArgumentMatchers;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
 import com.umer.springboottesttutorial.entity.Gender;
 import com.umer.springboottesttutorial.entity.Student;
 import com.umer.springboottesttutorial.exception.BadRequestException;
@@ -83,6 +83,7 @@ public class StudentServiceTest {
 		// then
 		assertThatThrownBy(() -> underTest.addStudent(student)).isInstanceOf(BadRequestException.class)
 				.hasMessageContaining("Email " + email + " already taken.");
+		verify(studentRepository, never()).save(ArgumentMatchers.any());
 	}
 
 	@Test
