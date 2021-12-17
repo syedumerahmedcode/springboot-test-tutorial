@@ -27,5 +27,6 @@ References:
 - https://www.arhohuttunen.com/spring-boot-webmvctest/ (Description of @WebMvcTest)
 - https://www.arhohuttunen.com/spring-boot-datajpatest/ (Testing the Persistence Layer With Spring Boot @DataJpaTest)
 - https://github.com/arhohuttunen/spring-boot-test-examples (A very good resource for quick reference for annotations about testing)
+- https://stackoverflow.com/questions/25614593/asserting-array-of-arrays-with-jsonpath-and-spring-mvc
 
 Timestamp: 59:43
