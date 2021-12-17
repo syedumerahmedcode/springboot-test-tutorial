@@ -45,6 +45,8 @@ public class StudentControllerTest {
 
 		final MockHttpServletResponse mvcResponse = performHTTPCallForGetAllStudents.andDo(print())
 				.andExpect(status().isOk()).andReturn().getResponse();
+		// TODO: Either, pass the actual json in a file, or
+		// TODO: Use $jsonPath to check for jsonArray.
 		String actualStudentsJson="[{\"id\":null,\"name\":\"Alice\",\"email\":\"some.email@gmail.com\",\"gender\":\"FEMALE\"}]";
 		assertThat(mvcResponse.getContentAsString()).isEqualTo(
 				actualStudentsJson);
