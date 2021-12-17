@@ -53,6 +53,10 @@ public class StudentControllerTest {
 				.getResponse();
 		// TODO: Either, pass the actual json in a file, or
 		// TODO: Use $jsonPath to check for jsonArray.
+		/**
+		 * Please note that we are not using a response DTO in this project. With a
+		 * response DTO, this assertion would be carried out slightly differently.
+		 */
 		String actualStudentsJson="[{\"id\":null,\"name\":\"Alice\",\"email\":\"some.email@gmail.com\",\"gender\":\"FEMALE\"}]";
 		assertThat(mvcResponse.getContentAsString()).isEqualTo(
 				actualStudentsJson);
