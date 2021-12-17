@@ -35,16 +35,22 @@ public class StudentControllerTest {
 
 	@Test
 	public void getAllStudents() throws Exception {
+		// given
 		Student student = new Student("Alice", "some.email@gmail.com", Gender.FEMALE);
 		List<Student> students = new ArrayList<>();
 		students.add(student);
 		when(studentService.getAllStudents()).thenReturn(students);
 
+		// when
 		final MockHttpServletRequestBuilder requestBuilderForGetAllStudents = get("/api/v1/students");
 		final ResultActions performHTTPCallForGetAllStudents = mockMvc.perform(requestBuilderForGetAllStudents);
 
-		final MockHttpServletResponse mvcResponse = performHTTPCallForGetAllStudents.andDo(print())
-				.andExpect(status().isOk()).andReturn().getResponse();
+		// then
+		final MockHttpServletResponse mvcResponse = performHTTPCallForGetAllStudents
+				.andDo(print())
+				.andExpect(status().isOk())
+				.andReturn()
+				.getResponse();
 		// TODO: Either, pass the actual json in a file, or
 		// TODO: Use $jsonPath to check for jsonArray.
 		String actualStudentsJson="[{\"id\":null,\"name\":\"Alice\",\"email\":\"some.email@gmail.com\",\"gender\":\"FEMALE\"}]";
