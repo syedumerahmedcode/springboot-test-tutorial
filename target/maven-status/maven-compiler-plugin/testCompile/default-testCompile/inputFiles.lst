@@ -1,4 +1,5 @@
 /home/umer/spring/springboot-test-tutorial/src/test/java/com/umer/springboottesttutorial/service/StudentServiceTest.java
 /home/umer/spring/springboot-test-tutorial/src/test/java/com/umer/springboottesttutorial/controller/StudentControllerTest.java
 /home/umer/spring/springboot-test-tutorial/src/test/java/com/umer/springboottesttutorial/SpringbootTestTutorialApplicationTests.java
+/home/umer/spring/springboot-test-tutorial/src/test/java/com/umer/springboottesttutorial/controller/StudentControllerIT.java
 /home/umer/spring/springboot-test-tutorial/src/test/java/com/umer/springboottesttutorial/repository/StudentRepositoryTest.java
