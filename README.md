@@ -23,6 +23,93 @@
 - [References](#references)
 - [Contact Information](#contact-information)
 
+
+## Introduction
+
+- To be defined.
+
+## Out Of Scope
+
+- To be defined.
+
+## Explanation Junit5
+
+- To be defined.
+
+## Explanation Junit Platform
+
+- To be defined.
+
+## Explanation Junit Jupiter
+
+- To be defined.
+
+## Explanation Junit Vintage
+
+- To be defined.
+
+## Explanation AssertJ
+
+- To be defined.
+
+## Explanation DataJpaTest
+
+- To be defined.
+
+## Explanation parameterized tests
+
+- To be defined.
+
+## Explanation Mockito
+
+- To be defined.
+
+## Explanation WebMvcTest
+
+- To be defined.
+
+## Explanation SpringBootTest
+
+- To be defined.
+
+## Explanation JsonTest
+
+- To be defined.
+
+## Explanation MockWebServer
+
+- To be defined.
+
+## Technologies Used
+
+- To be defined.
+
+## Prerequisities
+
+- To be defined.
+
+## Commands
+
+- To be defined.
+
+## Contribution
+
+- To be defined.
+
+## References
+
+- To be defined.
+
+## Contact Information
+
+- To be defined.
+
+
+
+
+
+
+
 TODO:
 
 - Write some notes on Junit5. 
