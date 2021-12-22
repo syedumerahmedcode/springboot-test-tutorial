@@ -90,7 +90,11 @@
 
 ## Commands
 
-- To be defined.
+To run the project, navigate to the project folder(where pom.xml is located) and execute the following command: 
+
+```bash
+mvn clean install
+```
 
 ## Contribution
 
