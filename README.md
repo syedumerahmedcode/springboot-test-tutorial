@@ -82,7 +82,12 @@
 
 ## Technologies Used
 
-- To be defined.
+- Java 11
+- [SpringBoot](https://start.spring.io/): Used to create easy stand-alone, production-grade Spring based Applications.
+- [Maven](https://maven.apache.org/): Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+- [H2 Database Engine](https://www.h2database.com/html/main.html): Embedded relational database.
+- [Junit5](https://junit.org/junit5/docs/current/user-guide/): Junit5 is the 5th version of Junit library which is used for writing tests.
+
 
 ## Prerequisities
 
