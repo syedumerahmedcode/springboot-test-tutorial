@@ -26,7 +26,7 @@
 
 ## Introduction
 
-- To be defined.
+The aim of this project is to show case the different ways in which a spring boot application can be tested. This project is supposed to be a cook book for writing tests and hence contains various types of unit tests as well as some integration tests. 
 
 ## Out Of Scope
 
