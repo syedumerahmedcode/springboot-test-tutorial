@@ -30,7 +30,11 @@ The aim of this project is to show case the different ways in which a spring boo
 
 ## Out Of Scope
 
-- To be defined.
+Some integration tests such as _@SpringBootTest_ are not part of this project as they proved too complex to implement and I was constantly running into problems while implementing them. 
+
+If someone can help me out, please feel free to contact me on my email/social network (see below) or feel free to create a Pull Request.
+
+Even though, these types of integration tests are not implemented, it is worthwhile to explain them and hence, there are dedicated sections to its explanation in this readme.
 
 ## Explanation Junit5
 
