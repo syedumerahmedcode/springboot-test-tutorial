@@ -86,7 +86,7 @@
 
 ## Prerequisities
 
-- To be defined.
+For the project to run successfully, Java and Maven must be configured on the machine.
 
 ## Commands
 
