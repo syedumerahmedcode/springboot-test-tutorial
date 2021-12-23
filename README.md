@@ -35,7 +35,7 @@ For this project, a simple student application is realized containing a Student 
 - email
 - gender(An _enum_ containing values MALE, FEMALE and OTHER)
 
-We have a _Service_ which is used **add**, **delete** and **getAllStudents**. This service is exposed to the outside world via a _Controller_.
+We have a _Service_ which is used **addStudent()**, **deleteStudent** and **getAllStudents()**. This service is exposed to the outside world via a _Controller_.
 
 All of this is tested via unit tests as well as (some) integration tests. 
 
