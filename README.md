@@ -122,17 +122,16 @@ Feature requests, issues, pull requests and questions are welcome. Especially, i
 
 ## References
 
-- To be defined.
+- [1](https://www.youtube.com/watch?v=Geq60OVyBPg): Software Testing Tutorial - Learn Unit Testing and Integration Testing **(YouTube) (Primary Resource)**
+- [2](https://junit.org/junit5/): JUnit 5 User Guide
+- [3](https://www.arhohuttunen.com/spring-boot-webmvctest/): Testing Web Controllers With Spring Boot @WebMvcTest
+- [4](https://www.arhohuttunen.com/spring-boot-datajpatest/): Testing the Persistence Layer With Spring Boot @DataJpaTest
+- [5](https://github.com/arhohuttunen/spring-boot-test-examples): spring-boot-test-examples **(GitHub)**
+- [6](https://stackoverflow.com/questions/25614593/asserting-array-of-arrays-with-jsonpath-and-spring-mvc): Asserting array of arrays with JSONPath and spring mvc **(Stack Overflow)**
 
 ## Contact Information
 
 How to reach me? At [github specific gmail account](mailto:syedumerahmedcode@gmail.com?subject=%5BGitHub%5D%20Hello%20from%20Github). Additionally, you can reach me via [Linkedin](https://www.linkedin.com/in/syed-umer-ahmed-a346a746/) or at [Xing](https://www.xing.com/profile/SyedUmer_Ahmed/cv)
-
-
-
-
-
-
 
 TODO:
 
@@ -153,14 +152,3 @@ Why do we use Mock? Because we have already tested StudentRepository class. Henc
 - In order to avoid initialization and closing of `autoClosable`, one can also use `@ExtendWith(MockitoExtension.class)`.
 - Write a small note on ArgumentCaptor. Describe how ArgumentCaptor is used to verify inputs.
 
-
-References:
-
-- https://junit.org/junit5/
-- https://www.youtube.com/watch?v=Geq60OVyBPg&t=635s **(YouTube)**
-- https://www.arhohuttunen.com/spring-boot-webmvctest/ (Description of @WebMvcTest)
-- https://www.arhohuttunen.com/spring-boot-datajpatest/ (Testing the Persistence Layer With Spring Boot @DataJpaTest)
-- https://github.com/arhohuttunen/spring-boot-test-examples (A very good resource for quick reference for annotations about testing)
-- https://stackoverflow.com/questions/25614593/asserting-array-of-arrays-with-jsonpath-and-spring-mvc
-
-Timestamp: 59:43
