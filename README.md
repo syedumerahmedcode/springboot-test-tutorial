@@ -37,7 +37,9 @@ For this project, a simple student application is realized containing a Student 
 
 We have a _Service_ which is used **addStudent()**, **deleteStudent** and **getAllStudents()**. This service is exposed to the outside world via a _Controller_.
 
-All of this is tested via unit tests as well as (some) integration tests. 
+- **TODO**: Insert class diagram from White board.
+ 
+All of this code is tested via unit tests as well as (some) integration tests. 
 
 ## Out Of Scope
 
@@ -49,7 +51,13 @@ Even though, these types of integration tests are not implemented, it is worthwh
 
 ## Explanation Junit5
 
-- To be defined.
+Junit5 provides an up-to-date foundation for developer-side testing on the JVM. Using Junit, developers can easily write unit tests which ensure high quality of the shipped software to production. 
+
+Junit5 consists of three different sub-projects which are:
+
+**JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage** 
+
+These are described briefly in the foloowing sections.
 
 ## Explanation Junit Platform
 
@@ -128,6 +136,7 @@ Feature requests, issues, pull requests and questions are welcome. Especially, i
 - [4](https://www.arhohuttunen.com/spring-boot-datajpatest/): Testing the Persistence Layer With Spring Boot @DataJpaTest
 - [5](https://github.com/arhohuttunen/spring-boot-test-examples): spring-boot-test-examples **(GitHub)**
 - [6](https://stackoverflow.com/questions/25614593/asserting-array-of-arrays-with-jsonpath-and-spring-mvc): Asserting array of arrays with JSONPath and spring mvc **(Stack Overflow)**
+- [7](https://www.baeldung.com/junit-5): A Guide to JUnit 5
 
 ## Contact Information
 
