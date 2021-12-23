@@ -123,7 +123,7 @@ Feature requests, issues, pull requests and questions are welcome. Especially, i
 ## References
 
 - [1](https://www.youtube.com/watch?v=Geq60OVyBPg): Software Testing Tutorial - Learn Unit Testing and Integration Testing **(YouTube) (Primary Resource)**
-- [2](https://junit.org/junit5/): JUnit 5 User Guide
+- [2](https://junit.org/junit5/): JUnit 5 User Guide **(Official Website)**
 - [3](https://www.arhohuttunen.com/spring-boot-webmvctest/): Testing Web Controllers With Spring Boot @WebMvcTest
 - [4](https://www.arhohuttunen.com/spring-boot-datajpatest/): Testing the Persistence Layer With Spring Boot @DataJpaTest
 - [5](https://github.com/arhohuttunen/spring-boot-test-examples): spring-boot-test-examples **(GitHub)**
