@@ -28,6 +28,17 @@
 
 The aim of this project is to show case the different ways in which a spring boot application can be tested. This project is supposed to be a cook book for writing tests and hence contains various types of unit tests as well as some integration tests. 
 
+For this project, a simple student application is realized containing a Student _Entity_ which stores the following:
+
+- id
+- name
+- email
+- gender(An _enum_ containing values MALE, FEMALE and OTHER)
+
+We have a _Service_ which is used **add**, **delete** and **getAllStudents**. This service is exposed to the outside world via a _Controller_.
+
+All of this is tested via unit tests as well as (some) integration tests. 
+
 ## Out Of Scope
 
 Some integration tests such as _@SpringBootTest_ are not part of this project as they proved too complex to implement and I was constantly running into problems while implementing them. 
