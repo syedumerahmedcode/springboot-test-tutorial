@@ -4,9 +4,9 @@
 - [Introduction](#introduction)
 - [Out Of Scope](#out-of-scope)
 - [Explanation Junit5](#explanation-junit5)
-- [Explanation Junit Platform](#explanation-junit-platform)
-- [Explanation Junit Jupiter](#explanation-junit-jupiter)
-- [Explanation Junit Vintage](#explanation-junit-vintage)
+- [Explanation JUnit Platform](#explanation-junit-platform)
+- [Explanation JUnit Jupiter](#explanation-junit-jupiter)
+- [Explanation JUnit Vintage](#explanation-junit-vintage)
 - [Explanation AssertJ](#explanation-assertj)
 - [Explanation DataJpaTest](#explanation-datajpatest)
 - [Explanation parameterized tests](#explanation-parameterized-tests)
@@ -47,7 +47,7 @@ Some integration tests such as _@SpringBootTest_ are not part of this project as
 
 If someone can help me out, please feel free to contact me on my email/social network (see below) or feel free to create a Pull Request.
 
-Even though, these types of integration tests are not implemented, it is worthwhile to explain them and hence, there are dedicated sections to its explanation in this readme.
+Even though, these types of integration tests are not implemented, it is worthwhile to explain them and hence, there are dedicated sections to its explanation in this readme file.
 
 ## Explanation Junit5
 
@@ -57,17 +57,17 @@ Junit5 consists of three different sub-projects which are:
 
 **JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage** 
 
-These are described briefly in the foloowing sections.
+These are described briefly in the following sections.
 
-## Explanation Junit Platform
-
-- To be defined.
-
-## Explanation Junit Jupiter
+## Explanation JUnit Platform
 
 - To be defined.
 
-## Explanation Junit Vintage
+## Explanation JUnit Jupiter
+
+- To be defined.
+
+## Explanation JUnit Vintage
 
 - To be defined.
 
@@ -109,7 +109,7 @@ These are described briefly in the foloowing sections.
 - [SpringBoot](https://start.spring.io/): Used to create easy stand-alone, production-grade Spring based Applications.
 - [Maven](https://maven.apache.org/): Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
 - [H2 Database Engine](https://www.h2database.com/html/main.html): Embedded relational database.
-- [Junit5](https://junit.org/junit5/docs/current/user-guide/): Junit5 is the 5th version of Junit library which is used for writing tests.
+- [Junit5](https://junit.org/junit5/docs/current/user-guide/): Junit5 is the 5th version of JUnit library which is used for writing tests.
 
 
 ## Prerequisities
@@ -145,9 +145,9 @@ How to reach me? At [github specific gmail account](mailto:syedumerahmedcode@gma
 TODO:
 
 - Write some notes on Junit5. 
-- Define Junit Platform
-- Define Junit Jupiter
-- Define Junit Vintage
+- Define JUnit Platform
+- Define JUnit Jupiter
+- Define JUnit Vintage
 - Add a small note on AssertJ
 - Write a small note on @DataJpaTest in your own words.
 
