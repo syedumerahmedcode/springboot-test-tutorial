@@ -61,7 +61,7 @@ These are described briefly in the following sections.
 
 ## Explanation JUnit Platform
 
-- To be defined.
+The Junit Platform is the foundation for launching testing frameworks on the JVM(developer's machine).One can use _TestEngine_ API for developing a testing framework as well as _Console Launcher_ to execute tests from the command line.
 
 ## Explanation JUnit Jupiter
 
